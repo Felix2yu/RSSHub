@@ -1,4 +1,4 @@
-FROM node:alpine
+FROM node:10-alpine
 
 LABEL MAINTAINER https://github.com/DIYgod/RSSHub/
 
