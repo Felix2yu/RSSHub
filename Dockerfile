@@ -39,6 +39,8 @@ RUN if [ "$PUPPETEER_SKIP_CHROMIUM_DOWNLOAD" = 0 ]; then \
 
 COPY . /app
 
+RUN sed -i 's%<blockquote> - %%g' /app/lib/routes/weibo/utils.js
+
 EXPOSE 1200
 ENTRYPOINT ["dumb-init", "--"]
 
